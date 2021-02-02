@@ -196,7 +196,11 @@ curl localhost/pod-b
 # outputs "pod-b"
 ```
 
+## What do we need from you?
 
-### I finished. What now?
+- Your code must compile and have the desired result after running `pulumi up`;
+- Organize your changes in easy to review commits. Following [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) would be a plus;
+
+## I finished. What now?
 
 Now you send us a link to your repo at sre@mobiauto.com.br. We'll get back to you as soon as possible 🚀
