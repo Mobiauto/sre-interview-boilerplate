@@ -4,22 +4,22 @@ This repository holds an interview problem designed for the [Site Reliability En
 
 ## Goals
 
-1. **Expose your hability to learn new tools**
-   We don't expect you to know all the technology that will be used here. We also don't expect you to understand them deeply, just enough to understand how they fit together and get the task done.
+1. **Expose your ability to learn new tools**
+   We don't expect you to know all the technology that  here. We also don't expect you to understand them deeply, just enough to understand how they fit together and get the task done.
 
 
 2. **Evaluate how you solve problems**
    Since we don't expect you to know the technology deeply, we want to understand how you will deal with unexpected problems on systems with unknown parts as they appear.
 
 
-_If you feel that for some reason this task doesn't achieve the above goals or if you find any problems along the way, you can let us know by emailing the team at sre@mobiauto.com.br._
+_If you feel that for some reason this task doesn't meet the above goals or if you find any problems along the way, you can let us know by emailing the team at sre@mobiauto.com.br._
 
 ## Basic Requirements
-- Knowledge of how containers and a container orchestrator work (Kubernetes, in this case);
+- Knowledge of how containers and a container orchestration work (Kubernetes, in this case);
 - Knowledge of how network requests work;
 - Knowledge of a programming language;
 - Knowledge of how to use the command line;
-- Patience to read documentations;
+- Patience to read documentation;
 - Git.
 
 ## How to use this repo
