@@ -70,12 +70,12 @@ This project is a default Pulumi typescript project containing a `kind` Nginx de
 1. **Make sure your Kubernetes environment is running**
    Start you cluster and acquire context by running:
 
-   ```
+   ```sh
    kind create cluster --config cluster.yaml
    ```
 
     And check the cluster status:
-    ```
+    ```sh
     kubectl get pods --all-namespaces
     NAMESPACE            NAME                                         READY   STATUS    RESTARTS   AGE
     kube-system          coredns-f9fd979d6-bt67v                      1/1     Running   0          37s
@@ -91,18 +91,18 @@ This project is a default Pulumi typescript project containing a `kind` Nginx de
     ```
 
 2. **Login into your Pulumi account**
-    ```
+    ```sh
     pulumi login
     ```
 
 3. **Install dependencies**
 
-    ```
+    ```sh
     yarn install
     ```
 
 4. **Preview your code**
-   ```
+   ```sh
    $ pulumi preview
 
    Previewing update (dev)
@@ -138,7 +138,7 @@ This project is a default Pulumi typescript project containing a `kind` Nginx de
     ```
 
 5. **Bootstrap your code**
-   ```
+   ```sh
    $ pulumi up
 
    ...
@@ -174,7 +174,7 @@ This project is a default Pulumi typescript project containing a `kind` Nginx de
    ```
 
 6. **Check if your application is running**
-   ```
+   ```sh
    kubectl get pods --all-namespaces
    ```
 
@@ -189,14 +189,18 @@ If everything goes well, we're going to have two pods: `pod-a` and `pod-b` and a
 
 We want to configure one or more **services** and **ingresses** for this Kubernetes cluster such that we're able to `curl` both pods and get their respective answers from `localhost/pod-a` and `localhost/pod-b` endpoints. You can check if its working by running:
 
-```
-curl localhost/pod-a
+```sh
+$ curl localhost/pod-a
 # outputs "pod-a"
-curl localhost/pod-b
+$ curl localhost/pod-b
 # outputs "pod-b"
 ```
 
+## What do we need from you?
 
-### I finished. What now?
+- Your code must compile and have the desired result after running `pulumi up`;
+- Organize your changes in easy to review commits. Following [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) would be a plus;
+
+## I finished. What now?
 
 Now you send us a link to your repo at sre@mobiauto.com.br. We'll get back to you as soon as possible 🚀
